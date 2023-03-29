@@ -1,0 +1,8 @@
+---
+
+  - name: install nagios package (CentOS)
+    tags: nagios, centos
+    yum:
+      name: nagios
+      state: latest
+    when: ansible_distribution == "CentOS"
